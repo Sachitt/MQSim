@@ -395,6 +395,7 @@ void IO_Flow_Parameter_Set_Synthetic::XML_deserialize(rapidxml::xml_node<> *node
 				std::string val = param->value();
 				Total_Requests_To_Generate = std::stoi(val);
 			}
+
 		}
 	} catch (...) {
 		PRINT_ERROR("Error in IO_Flow_Parameter_Set_Synthetic!")
@@ -464,6 +465,7 @@ void IO_Flow_Parameter_Set_Trace_Based::XML_deserialize(rapidxml::xml_node<> *no
 					PRINT_ERROR("Wrong time unit specified for the trace based flow")
 				}
 			}
+
 
 		}
 	} catch (...) {

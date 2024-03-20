@@ -34,6 +34,8 @@ namespace SSD_Components
 		Data_Cache_Manager_Base* cache)
 		: MQSimEngine::Sim_Object(id), type(type), max_logical_sector_address(max_logical_sector_address), 
 		sectors_per_page(sectors_per_page), cache(cache)
+		,sectors_per_subpage(sectors_per_page/ALIGN_UNIT_SIZE)
+
 	{
 		_my_instance = this;
 	}
